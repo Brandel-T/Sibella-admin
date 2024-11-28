@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_controls_input_fields",
+  "info": {
+    "displayName": "InputField",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "text",
+      "required": true
+    },
+    "required": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "email",
+        "text",
+        "tel",
+        "textarea",
+        "checkbox",
+        "button"
+      ],
+      "default": "text"
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "firstname",
+        "lastname",
+        "email",
+        "tel",
+        "subject",
+        "message",
+        "agreements"
+      ],
+      "required": true
+    }
+  }
+}

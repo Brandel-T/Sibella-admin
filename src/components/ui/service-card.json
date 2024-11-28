@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_ui_service_cards",
+  "info": {
+    "displayName": "ServiceCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "title is missing"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageDescription": {
+      "type": "string",
+      "default": "Sibella: service image"
+    },
+    "redirect_to": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

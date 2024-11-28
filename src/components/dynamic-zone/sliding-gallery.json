@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_dynamic_zone_sliding_galleries",
+  "info": {
+    "displayName": "SlidingGallery",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "speed": {
+      "type": "integer"
+    }
+  }
+}

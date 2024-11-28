@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_ui_crockery_cards",
+  "info": {
+    "displayName": "CrockeryCard",
+    "icon": "shoppingCart"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

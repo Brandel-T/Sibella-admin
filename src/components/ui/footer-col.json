@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ui_footer_cols",
+  "info": {
+    "displayName": "FooterCol",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

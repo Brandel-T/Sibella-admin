@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_controls_selects",
+  "info": {
+    "displayName": "Select",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "required": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::genre.genre"
+    }
+  }
+}

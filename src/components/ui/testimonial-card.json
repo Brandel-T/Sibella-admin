@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_ui_testimonial_cards",
+  "info": {
+    "displayName": "TestimonialCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author_description": {
+      "type": "string"
+    }
+  }
+}
