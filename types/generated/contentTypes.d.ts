@@ -1185,12 +1185,10 @@ export interface ApiRentalPageRentalPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    crockeries: Schema.Attribute.Component<'ui.crockery-card', true> &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
+    crockeries: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::crockery.crockery'
+    >;
     crockeryCta: Schema.Attribute.Component<'ui.rental-card', false> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -1198,6 +1196,10 @@ export interface ApiRentalPageRentalPage extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    electronics: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::electronic.electronic'
+    >;
     electronicsCta: Schema.Attribute.Component<'ui.rental-card', false> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

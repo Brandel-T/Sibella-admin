@@ -64,15 +64,15 @@
       },
       "component": "ui.rental-card"
     },
+    "electronics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::electronic.electronic"
+    },
     "crockeries": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "ui.crockery-card"
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::crockery.crockery"
     }
   }
 }
