@@ -1318,6 +1318,39 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSocialMediaSocialMedia extends Struct.CollectionTypeSchema {
+  collectionName: 'social_medias';
+  info: {
+    description: '';
+    displayName: 'Social Media';
+    pluralName: 'social-medias';
+    singularName: 'social-media';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    iconName: Schema.Attribute.String;
+    isPhoneNumber: Schema.Attribute.Boolean;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::social-media.social-media'
+    > &
+      Schema.Attribute.Private;
+    mode: Schema.Attribute.Enumeration<['svg', 'css']>;
+    publishedAt: Schema.Attribute.DateTime;
+    theme: Schema.Attribute.Enumeration<['primary', 'secondary', 'tertiary']>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    url: Schema.Attribute.Text;
+  };
+}
+
 export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
   collectionName: 'testimonials';
   info: {
@@ -1894,6 +1927,7 @@ declare module '@strapi/strapi' {
       'api::rental-page.rental-page': ApiRentalPageRentalPage;
       'api::section.section': ApiSectionSection;
       'api::service.service': ApiServiceService;
+      'api::social-media.social-media': ApiSocialMediaSocialMedia;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

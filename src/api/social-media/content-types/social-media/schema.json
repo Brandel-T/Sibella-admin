@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_medias",
+  "info": {
+    "singularName": "social-media",
+    "pluralName": "social-medias",
+    "displayName": "Social Media",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "iconName": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "svg",
+        "css"
+      ]
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary"
+      ]
+    },
+    "isPhoneNumber": {
+      "type": "boolean"
+    }
+  }
+}
