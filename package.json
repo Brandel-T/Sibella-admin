@@ -2,7 +2,7 @@
   "name": "sibella-backend",
   "version": "0.1.0",
   "private": true,
-  "description": "A Strapi application",
+  "description": "Strapi CMS application for Sibella - Catering and Rental Service website",
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
